@@ -2,8 +2,6 @@ package com.example.final_project.controller;
 
 import com.example.final_project.dto.UserRegistrationDto;
 import com.example.final_project.model.Poll;
-import com.example.final_project.model.Question;
-import com.example.final_project.model.User;
 import com.example.final_project.service.PollService;
 import com.example.final_project.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +14,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class MainController {
 
-    private final UserService userService;
     private final PollService pollService;
+    private final UserService userService;
 
     @Autowired
     public MainController(UserService userService, PollService pollService) {
